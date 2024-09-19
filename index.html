@@ -4,32 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-    <script>
-        function validateEmail(event) {
-        const emailInput = document.querySelector('.w input[type="email"]');
-        const email = emailInput.value.trim();
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-
-        if (!emailPattern.test(email)) {
-            alert('Please enter a valid email address.');
-            emailInput.focus();
-            event.preventDefault();
-            return false;
-        }
-
-        return true;
-    }
-    const registerButton = document.querySelector('.w button');
-    registerButton.addEventListener('click', (event) => {
-        if (!validateEmail(event)) {
-            event.stopPropagation();
-        }
-    });function openTab() {
-    window.open("https://www.index2.html/", "_blank");
-    }
-        </script>
-        
+    <link href="style.css" rel="stylesheet">        
 </head>
 <body>
     <section id="s1">
