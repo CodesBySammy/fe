@@ -18,7 +18,7 @@ angular.module('contactApp', [])
 
             $http({
                 method: 'POST',
-                url: 'http://localhost:8080/submitQuery', // Update to match your server endpoint
+                url: 'https://be-iik0.onrender.com/submitQuery', // Update to match your server endpoint
                 data: self.formData
             })
             .then(function(response) {
